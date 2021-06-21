@@ -21,6 +21,14 @@ body {
   background-color: hsl(210, 36%, 96%);
 }
 
+ul {
+  list-style: none;
+}
+
+img {
+  height: 40px;
+}
+
 // navbar
 .navbar-center {
   display: flex;
@@ -34,7 +42,7 @@ body {
   transform: translateY(5px);
 }
 
-[class^="fas"] {
+[class^="fa"] {
   color: $primary-color;
 }
 
@@ -43,7 +51,7 @@ body {
   background-color: #ffff;
   box-shadow: 0px 5px 8px $light-shadow;
 
-  li {
+  .nav-links li {
     padding: 0.6rem;
     margin-left: 1rem;
   }
@@ -53,11 +61,15 @@ body {
     color: $color-gray;
     font-size: 1.3rem;
     letter-spacing: 5px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
 .nav-links {
-  list-style: none;
   height: 0;
   overflow: hidden;
   transition: all 0.2s linear;
@@ -65,4 +77,50 @@ body {
 
 .show {
   height: 12rem;
+}
+
+.social-links {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    .navbar-center {
+      padding: 1rem 0;
+    }
+
+    .bars {
+      display: none;
+    }
+
+    .nav-links {
+      height: auto;
+      display: flex;
+      align-items: center;
+
+      li {
+        padding: 0;
+      }
+    }
+
+    .social-links {
+      display: block;
+
+      &__icons {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      & a {
+        padding: 0 0.8rem 0 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
