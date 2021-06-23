@@ -35,7 +35,7 @@ This project is a part of 15 vanilla JavaScript projects.
 
 ### What I learned
 
-- I used `height` and `overflow: hidden` property to add transition to the navbar on mobile view and to toggle the navbar. When using ``display: none` property to hide and show the navbar you can't add transition to the element resulting sudden display and hide of the element which doesn't look good.
+- I used `height` and `overflow: hidden` property to add transition to the navbar on mobile view and to toggle the navbar. When using ```display: none``` property to hide and show the navbar you can't add transition to the element resulting sudden display and hide of the element which doesn't look good.
 
 - I also learned about `Node.contains()` Javascript DOM property which return true if the element is the decendant of the node (including itself) on which its called otherwise returns false.
 
